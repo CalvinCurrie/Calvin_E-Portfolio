@@ -132,3 +132,8 @@ nav {
     font-size: 20px;
     margin-bottom: 28px;
 }
+
+.about-me__link {
+    font-size: 48px;
+    color: black;
+}
