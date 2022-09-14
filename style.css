@@ -85,6 +85,7 @@ li {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 .text--purple {
@@ -336,6 +337,7 @@ PROJECT
     left: 90px;
     transform: translateY(100%);
     max-width: 550px;
+    padding: 0 12px;
     z-index: 3;
     opacity: 0;
     transition: transform 450ms, opacity 300ms ease-out;
@@ -432,7 +434,8 @@ footer {
 
 /* Mobile Phones and Tablets */
 
-@media (max-width: 700px) {
+
+@media (max-width: 768px) {
     nav {
         height: 68px;
     }
@@ -443,5 +446,57 @@ footer {
 
     .about-me__info--para {
         font-size: 18px;
+    }
+
+    .language {
+        width: calc(100%/3);
+    }
+
+    .project__description--para {
+        font-size: 14px;
+    }
+
+    .project__description {
+        left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 512px) {
+    .nav__link:not(:last-child) {
+        display: none;
+    }
+
+    .project__description--para {
+        display: none;
+    }
+
+
+    .project__descripton--links {
+        display: flex;
+        flex-direction: row;
+        margin: 6px auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project__description--title {
+        font-size: 32px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .project__description--sub-title {
+        text-align: center;
+        margin: 12px 0;
+    }
+
+    .project__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        left: 0;
+        width: 100%;
     }
 }
