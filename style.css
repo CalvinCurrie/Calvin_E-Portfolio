@@ -67,6 +67,7 @@ a:hover {
 
 .link__hover-effect--white {
     color: #f8f8f8;
+    margin-right: 10px;
 }
 
 
@@ -456,7 +457,9 @@ footer {
     width: 100%;
     max-width: 500px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 28px;
 }
 
